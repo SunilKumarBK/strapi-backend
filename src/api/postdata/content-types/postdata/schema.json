@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "postdatas",
+  "info": {
+    "singularName": "postdata",
+    "pluralName": "postdatas",
+    "displayName": "postdata",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "titleDescription": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "postedTime": {
+      "type": "datetime"
+    }
+  }
+}

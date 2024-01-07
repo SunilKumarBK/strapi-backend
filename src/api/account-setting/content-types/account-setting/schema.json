@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "account_settings",
+  "info": {
+    "singularName": "account-setting",
+    "pluralName": "account-settings",
+    "displayName": "accountSetting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "emailAddress": {
+      "type": "email",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 10
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "pincode": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    },
+    "country": {
+      "type": "string"
+    }
+  }
+}
