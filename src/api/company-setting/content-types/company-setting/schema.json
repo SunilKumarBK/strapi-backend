@@ -4,7 +4,8 @@
   "info": {
     "singularName": "company-setting",
     "pluralName": "company-settings",
-    "displayName": "companySetting"
+    "displayName": "companySetting",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,20 +20,21 @@
     },
     "email": {
       "type": "email",
-      "required": true
+      "required": false
     },
     "companyDescription": {
       "type": "text"
     },
     "companyLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "phoneNumber": {
       "type": "integer"

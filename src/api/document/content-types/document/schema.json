@@ -4,8 +4,7 @@
   "info": {
     "singularName": "document",
     "pluralName": "documents",
-    "displayName": "document",
-    "description": ""
+    "displayName": "document"
   },
   "options": {
     "draftAndPublish": true
@@ -13,15 +12,17 @@
   "pluginOptions": {},
   "attributes": {
     "image": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "name": {
+      "type": "string"
     }
   }
 }

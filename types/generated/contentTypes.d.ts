@@ -920,6 +920,7 @@ export interface ApiCompanySettingCompanySetting extends Schema.CollectionType {
     singularName: 'company-setting';
     pluralName: 'company-settings';
     displayName: 'companySetting';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -927,7 +928,7 @@ export interface ApiCompanySettingCompanySetting extends Schema.CollectionType {
   attributes: {
     companyName: Attribute.String;
     companyAddress: Attribute.Text;
-    email: Attribute.Email & Attribute.Required;
+    email: Attribute.Email;
     companyDescription: Attribute.Text;
     companyLogo: Attribute.Media;
     phoneNumber: Attribute.Integer;
@@ -955,13 +956,13 @@ export interface ApiDocumentDocument extends Schema.CollectionType {
     singularName: 'document';
     pluralName: 'documents';
     displayName: 'document';
-    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     image: Attribute.Media;
+    name: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
