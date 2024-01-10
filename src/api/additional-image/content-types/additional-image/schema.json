@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "additional_images",
+  "info": {
+    "singularName": "additional-image",
+    "pluralName": "additional-images",
+    "displayName": "additionalImage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "gallery": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::gallery.gallery",
+      "inversedBy": "additional_images"
+    },
+    "imageName": {
+      "type": "string"
+    }
+  }
+}

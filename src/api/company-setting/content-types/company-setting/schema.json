@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "company_settings",
+  "info": {
+    "singularName": "company-setting",
+    "pluralName": "company-settings",
+    "displayName": "companySetting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companyName": {
+      "type": "string"
+    },
+    "companyAddress": {
+      "type": "text"
+    },
+    "email": {
+      "type": "email",
+      "required": false
+    },
+    "companyDescription": {
+      "type": "text"
+    },
+    "companyLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "phoneNumber": {
+      "type": "integer"
+    }
+  }
+}
